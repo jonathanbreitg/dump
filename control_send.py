@@ -1,5 +1,4 @@
 import os
-print("starting...")
 import requests
 import subprocess
 os.system("wget -O new.py https://raw.githubusercontent.com/jonathanbreitg/dump/main/control_send.py")
@@ -11,7 +10,7 @@ else:
 	os.system("rm control_send.py")
 	print("updating")
 	os.system("mv new.py control_send.py")
-	os.execv("control_send.py")
+	os.execl(sys.executable, sys.executable, *sys.argv)
 from time import sleep
 POST_URL = "https://epic-servering-but-pytyohn.jonathanbreitg.repl.co/POST-CONTROLLER"
 
