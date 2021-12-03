@@ -5,11 +5,12 @@ os.system("wget -O new.py https://raw.githubusercontent.com/jonathanbreitg/dump/
 import filecmp
 if filecmp.cmp("control_send.py","new.py"):
 	print("latest version")
+	os.system("rm new.py")
 else:
-	#os.system("rm control_send.py")
+	os.system("rm control_send.py")
 	print("updating")
-	#os.system("mv new.py control_send.py")
-	#os.execl("control_send.py")
+	os.system("mv new.py control_send.py")
+	os.execv("control_send.py")
 from time import sleep
 POST_URL = "https://epic-servering-but-pytyohn.jonathanbreitg.repl.co/POST-CONTROLLER"
 
