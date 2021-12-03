@@ -1,6 +1,6 @@
 import requests
 import subprocess
-os.system("wget https://raw.githubusercontent.com/jonathanbreitg/dump/main/control_send.py -o new.py")
+os.system("wget -o new.py https://raw.githubusercontent.com/jonathanbreitg/dump/main/control_send.py")
 import filecmp
 if filecmp.cmp("control_send.py","new.py"):
 	print("latest version")
